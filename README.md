@@ -1,6 +1,4 @@
-# ada-blockexplorer-api
-
-> ADA/Cardano Blockchain Block Explorer api client
+# ADA/Cardano Blockchain Block Explorer api client
 
 It supports the following runtimes
 
