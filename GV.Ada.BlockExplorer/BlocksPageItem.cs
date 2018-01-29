@@ -12,7 +12,7 @@ namespace GV.Ada.BlockExplorer
 		public int Slot { get; set; }
 
 		[JsonProperty("cbeBlkHash")]
-		public string BlkHash { get; set; }
+		public string BlockHash { get; set; }
 
 		[JsonProperty("cbeTimeIssued")]
 		public long TimeIssued { get; set; }
@@ -30,6 +30,6 @@ namespace GV.Ada.BlockExplorer
 		public string BlockLead { get; set; }
 
 		[JsonProperty("cbeFees")]
-		public Fees Fees { get; set; }
+		public CoinInfo Fees { get; set; }
 	}
 }
