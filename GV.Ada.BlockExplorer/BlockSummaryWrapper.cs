@@ -4,7 +4,6 @@ namespace GV.Ada.BlockExplorer
 {
 	public class BlockSummaryWrapper
 	{
-
 		[JsonProperty("cbsEntry")]
 		public BlockEntry Entry { get; set; }
 
