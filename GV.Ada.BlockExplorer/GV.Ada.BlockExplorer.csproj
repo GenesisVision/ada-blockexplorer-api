@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard1.4</TargetFramework>
+		<TargetFrameworks>netstandard1.4;netstandard2;</TargetFrameworks>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<AssemblyVersion>1.0.0.1</AssemblyVersion>
-		<FileVersion>1.0.0.1</FileVersion>
-		<Version>1.0.1</Version>
+		<AssemblyVersion>1.0.0.2</AssemblyVersion>
+		<FileVersion>1.0.0.2</FileVersion>
+		<Version>1.0.2</Version>
 		<Company>Genesis Vision</Company>
 		<Authors>Genesis.Vision</Authors>
+		<Title>GV.Ada.BlockExplorer Api Client</Title>
 		<Description>ADA/Cardano Blockchain Block Explorer Api Client</Description>
 		<PackageProjectUrl>https://github.com/GenesisVision/ada-blockexplorer-api</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/GenesisVision/ada-blockexplorer-api</RepositoryUrl>
@@ -16,4 +17,8 @@
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
 	</ItemGroup>
+
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard14'">
+		<DefineConstants>NETSTANDARD14</DefineConstants>
+	</PropertyGroup>
 </Project>

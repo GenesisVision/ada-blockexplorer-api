@@ -3,6 +3,7 @@
 It supports the following runtimes
 
 - .NET Standard 1.4
+- .NET Standard 2.0
 
    
 ## Examples
@@ -14,7 +15,7 @@ var trasaction = await service.GetTransaction("02712610f05e284db32c37eda9c1212f0
 ```
 
 ## NuGet
-Coming soon
+    PM> Install-Package GV.Ada.BlockExplorer
 
 # License
-The AdaBlockExplorerClient library is licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php "Read more about the MIT license form") license.
+The AdaBlockExplorerClient library is licensed under the MIT license.
